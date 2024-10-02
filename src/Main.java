@@ -1,60 +1,31 @@
-import java.util.Scanner;
+
 
 
 
 public class Main {
     public static void main(String[] args) {
 
-        String registrationNumber = "C026-01-0740/2023";
-        String customerName = "Joyline Cheptoo Selim";
-        String customerAddress = "Private Bag";
-        String customerContact = "0100100100";
-        String invoiceDate = "28/04/2020";
+        System.out.println("*************************CO26-01-0740/2023**************************");
+        System.out.println("#99ACS Building Gilmore Ave. New Mla.. Quezon City * Tel No:123-4567");
+        System.out.println("          VAT REG. TIN 098-765-4321-0000");
+        System.out.println("              SALES INVOICE\n");
+        System.out.println("Sold to:Joyline Cheptoo Selim\t\tDate:28/04/2022");
+        System.out.println("Address:private bag\t\t\t\t\tContact Number:0100100100\n");
+        System.out.println("=============================================================================");
+        System.out.println("Qty\t|\tItem Description\t|\tUnit Price\t|\tAmount");
+        System.out.println("=============================================================================");
+        System.out.println("4\t|\tPencil\t\t\t\t|\t20\t\t\t|\t80.00");
+        System.out.println("-----------------------------------------------------------------------------");
+        System.out.println("10\t|\tDuster\t\t\t\t|\t50\t\t\t|\t500.00");
+        System.out.println("-----------------------------------------------------------------------------");
+        System.out.println("9\t|\tPens\t\t\t\t|\t30\t\t\t|\t270.00");
+        System.out.println("-----------------------------------------------------------------------------");
+        System.out.println("10\t|\tcrayon\t\t\t\t|\t80\t\t\t|\t800.00");
+        System.out.println("==============================================================================");
+        System.out.println("                            |Sub Total\t\t|\t1650.00");
+        System.out.println("                            ==============================");
+        System.out.println("                            |VAT(16%)\t\t|\t264.00 ");
+        System.out.println("                            ==============================");
+        System.out.println("                            |Total Amount\t|\t1914.00");
 
-        // Create invoice items
-        String[] items = {"Pencil", "Duster", "Pens", "Crayon"};
-        int[] quantities = {4, 10, 9, 10};
-        double[] unitPrices = {20, 50, 30, 80};
-
-        // Calculate total quantity, subtotal, and VAT
-        int totalQuantity = 0;
-        double subtotal = 0;
-        double vat = 0.16;
-
-        for (int i = 0; i < items.length; i++) {
-            totalQuantity += quantities[i];
-            subtotal += quantities[i] * unitPrices[i];
-        }
-
-        double vatAmount = subtotal * vat;
-        double totalAmount = subtotal + vatAmount;
-
-        // Print invoice header
-        System.out.println("*******************************************************************************************************************");
-        System.out.println("****** " + registrationNumber + " ******");
-        System.out.println("Address: #99 ACS Building Gilmore Ave. New Mla., Quezon City  *  Tel. No: 123-4567");
-        System.out.println("VAT REG. TIN 098-765-4321-0000");
-        System.out.println("-------------------------------------------------- SALES INVOICE --------------------------------------------------");
-        System.out.println("Sold to: " + customerName);
-        System.out.println("Address: " + customerAddress);
-        System.out.println("Contact Number: " + customerContact);
-        System.out.println("Date: " + invoiceDate);
-        System.out.println("*******************************************************************************************************************");
-        System.out.println("Qty  | Item Description | Unit Price | Amount");
-        System.out.println("-------------------------------------------------------------------------------------------------------------------");
-
-        // Print invoice items
-        for (int i = 0; i < items.length; i++) {
-            System.out.printf("%-4d | %-15s | %-10.2f | %-10.2f\n", quantities[i], items[i], unitPrices[i], quantities[i] * unitPrices[i]);
-        }
-
-        // Print total quantity, subtotal, VAT, and total amount
-        System.out.println("-------------------------------------------------------------------------------------------------------------------");
-        System.out.printf("Total Quantity: %-3d\n", totalQuantity);
-        System.out.printf("Sub Total: %-30.2f\n", subtotal);
-        System.out.printf("VAT (16%%): %-25.2f\n", vatAmount);
-        System.out.println("-------------------------------------------------------------------------------------------------------------------");
-        System.out.printf("Total Amount: %-25.2f\n", totalAmount);
-        System.out.println("*******************************************************************************************************************");
-    }
-}
+    }}
